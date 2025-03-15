@@ -1,0 +1,126 @@
+/* Bố cục tổng thể */
+.container {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Tiêu đề */
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Thanh tabs */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Mỗi tab */
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #555;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.tab:hover {
+  background-color: #f5f5f5;
+}
+
+/* Tab đang active */
+.active-tab {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Đường gạch chân khi tab active */
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #007BFF;
+}
+
+/* Tiêu đề phụ trong các tab */
+.tab-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Khu vực thêm item */
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border:  gray;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Danh sách items */
+.list {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-left: -90px;
+}
+
+/* Khi item đã completed thì gạch ngang */
+.completed-item {
+  text-decoration: line-through;
+}
+
+/* Các style riêng cho tab Completed */
+.completed-tab-container {
+  position: relative;
+}
+
+.completed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.clear-completed-button {
+  background-color: #FF4C4C;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
