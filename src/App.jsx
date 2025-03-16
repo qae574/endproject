@@ -72,7 +72,7 @@ export default function TodoTabs() {
         />
         <button onClick={addItem}>Add</button>
       </div>
-
+      git commit -m "Initial commit"
       {/* Danh sách toàn bộ items */}
       <div className="list">
         {items.map((item, index) => (
